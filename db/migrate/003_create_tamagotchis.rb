@@ -6,6 +6,7 @@ class CreateTamagotchis < ActiveRecord::Migration[6.0]
       t.integer :happiness
       t.integer :fullness
       t.integer :income
+      t.string :image
 
       t.timestamps
     end

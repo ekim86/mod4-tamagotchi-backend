@@ -10,61 +10,53 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 7) do
+ActiveRecord::Schema.define(version: 5) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "comments", force: :cascade do |t|
-    t.string "content"
-    t.boolean "by_participant"
-    t.integer "idea_id"
+  create_table "inventories", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "item_id"
+    t.integer "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "idea_tags", force: :cascade do |t|
-    t.integer "tag_id"
-    t.integer "idea_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "ideas", force: :cascade do |t|
-    t.string "title"
-    t.string "description"
-    t.string "image"
-    t.integer "user_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "implementors", force: :cascade do |t|
-    t.string "role"
-    t.integer "user_id"
-    t.integer "idea_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "tags", force: :cascade do |t|
+  create_table "items", force: :cascade do |t|
     t.string "name"
+    t.integer "effect"
+    t.string "category"
+    t.integer "price"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "up_votes", force: :cascade do |t|
+  create_table "statuses", force: :cascade do |t|
+    t.integer "happiness"
+    t.integer "fullness"
+    t.integer "money"
     t.integer "user_id"
-    t.integer "idea_id"
+    t.integer "tamagotchi_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tamagotchis", force: :cascade do |t|
+    t.string "name"
+    t.string "species"
+    t.integer "happiness"
+    t.integer "fullness"
+    t.integer "income"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "email"
-    t.string "name"
-    t.string "image"
+    t.string "username"
+    t.string "password"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
