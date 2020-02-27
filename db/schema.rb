@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 5) do
   enable_extension "plpgsql"
 
   create_table "inventories", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "status_id"
     t.integer "item_id"
     t.integer "quantity"
     t.datetime "created_at", precision: 6, null: false
@@ -34,9 +34,9 @@ ActiveRecord::Schema.define(version: 5) do
   end
 
   create_table "statuses", force: :cascade do |t|
-    t.integer "happiness"
-    t.integer "fullness"
-    t.integer "money"
+    t.integer "happiness", default: 25
+    t.integer "fullness", default: 25
+    t.integer "money", default: 50
     t.integer "user_id"
     t.integer "tamagotchi_id"
     t.datetime "created_at", precision: 6, null: false
