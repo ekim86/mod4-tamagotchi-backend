@@ -1,5 +1,6 @@
 class InventoriesController < ApplicationController
   def index
+    render json: Status.find(params[:status_id]).inventories
   end
 
   def create
