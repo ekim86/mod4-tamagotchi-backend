@@ -4,5 +4,6 @@ class TamagotchisController < ApplicationController
   end
 
   def show
+    render json: Tamagotchi.find(params[:id])
   end
 end
