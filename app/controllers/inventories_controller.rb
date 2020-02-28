@@ -72,11 +72,13 @@ class InventoriesController < ApplicationController
     reduce
 
     @status.happiness += @item.effect
+    @status.money += @item.effect
     @status.save
 
     render json: {
       inventory: InventorySerializer.new(@inventory),
-      happiness: @status.happiness
+      happiness: @status.happiness,
+      money: @status.money
     }
   end
 
