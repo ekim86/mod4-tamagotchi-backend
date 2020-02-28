@@ -39,7 +39,7 @@ item7 = Item.create(name: 'beachball', effect: 2, category: 'toy', price: 3, ima
 item8 = Item.create(name: 'lego', effect: 2, category: 'toy', price: 5, image: 'https://p7.hiclipart.com/preview/119/226/355/lego-star-wars-free-content-clip-art-lego-cliparts.jpg')
 item9 = Item.create(name: 'dollhouse', effect: 2, category: 'toy', price: 7, image: 'https://banner2.cleanpng.com/20180315/iuw/kisspng-dollhouse-toy-clip-art-home-cartoon-images-5aa9f7a60463d5.038798961521088422018.jpg')
 item10 = Item.create(name: 'racecar', effect: 2, category: 'toy', price: 3, image: 'https://cdn.clipart.email/2dcc77d57ba189319fbfadd939083210_racing-car-clipart-png-image-free-download-searchpngcom_715-715.png')
-item11 = Item.create(name: 'barbie', effect: 2, category: 'toy', price: 5, image: 'https://lh3.googleusercontent.com/proxy/DJDHshD9uNunvCtmrLyOK7Zo7h8iCn8y-k6FORvtdyq7MFxqmKHzK_AgvWOcz0GH0XL3tEjx2A37wyoBnBlFYBtsK9bcbdJl6_TSDjOITDjP0Hzgdl3jTQO-Wqh4OqaQfCePrJ8PdBz2-OJpbR9HIIw7E3uhrnDOUEV13GU')
+item11 = Item.create(name: 'barbie', effect: 2, category: 'toy', price: 5, image: 'https://toppng.com/uploads/preview/library-download-download-doll-free-png-barbie-cartoo-11562939418disc3yugad.png')
 
 status1 = Status.create(user: user1, tamagotchi: tamagotchi1, happiness: 10, fullness: 10, money: 100)
 status2 = Status.create(user: user1, tamagotchi: tamagotchi2, happiness: 10, fullness: 10, money: 100)
