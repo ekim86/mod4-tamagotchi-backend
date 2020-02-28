@@ -10,7 +10,7 @@ class InventoriesController < ApplicationController
     inventory = nil
     
     # Check if user has enough moneu
-    if status.money > item.price
+    if status.money >= item.price
       inventory = Inventory.find_by(status_id: inventory_params['status_id'], item_id: inventory_params['item_id'])
       if inventory
         inventory.quantity += 1
