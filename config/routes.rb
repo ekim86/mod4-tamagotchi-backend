@@ -9,10 +9,8 @@ Rails.application.routes.draw do
   get 'items/', to: 'items#index'
   get 'items/:id', to: 'items#show'
   get 'inventories/:status_id', to: 'inventories#index'
-  post 'inventories/create', to: 'inventories#create'
-  get 'inventories/:id', to: 'inventories#show'
-  patch 'inventories/:id', to: 'inventories#update'
-  delete 'inventories/destroy', to: 'inventories#destroy'
+  post 'inventories/buy', to: 'inventories#buy'
+  post 'inventories/sell', to: 'inventories#sell'
   post 'users/create', to: 'users#create'
   post 'users/login', to: 'users#login'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

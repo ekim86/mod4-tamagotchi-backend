@@ -3,7 +3,7 @@ class CreateInventories < ActiveRecord::Migration[6.0]
     create_table :inventories do |t|
       t.integer :status_id
       t.integer :item_id
-      t.integer :quantity
+      t.integer :quantity, :default => 1
 
       t.timestamps
     end
