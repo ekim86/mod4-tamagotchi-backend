@@ -13,6 +13,6 @@ class StatusesController < ApplicationController
   end
 
   private def status_params
-    params.require(:status).permit(:user_id, :tamagotchi_id)
+    params.require(:status).permit(:user_id, :tamagotchi_id, :nickname)
   end
 end
