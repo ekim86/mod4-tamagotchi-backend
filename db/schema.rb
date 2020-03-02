@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 5) do
     t.integer "money", default: 50
     t.integer "user_id"
     t.integer "tamagotchi_id"
+    t.string "nickname"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -6,6 +6,7 @@ class CreateStatuses < ActiveRecord::Migration[6.0]
       t.integer :money, :default => 50
       t.integer :user_id
       t.integer :tamagotchi_id
+      t.string :nickname
 
       t.timestamps
     end

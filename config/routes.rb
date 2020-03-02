@@ -2,11 +2,9 @@ Rails.application.routes.draw do
   get 'tamagotchis/', to: 'tamagotchis#index'
   get 'tamagotchis/:id', to: 'tamagotchis#show'
 
-  get 'statuses/', to: 'statuses#index'
   post 'statuses/', to: 'statuses#create'
   get 'statuses/:id', to: 'statuses#show'
-  patch 'statuses/:id', to: 'statuses#update'
-  delete 'statuses/:id', to: 'statuses#destroy'
+  get 'statuses/user/:id', to: 'statuses#user_statuses'
 
   get 'items/', to: 'items#index'
   get 'items/:id', to: 'items#show'

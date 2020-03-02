@@ -1,7 +1,4 @@
 class StatusesController < ApplicationController
-  def index
-  end
-
   def create
     status = Status.create(status_params)
     render json: status
@@ -11,10 +8,8 @@ class StatusesController < ApplicationController
     render json: Status.find(params[:id])
   end
 
-  def update
-  end
-
-  def destroy
+  def user_statuses
+    render json: Status.where('user_id = ?', params[:id])
   end
 
   private def status_params
