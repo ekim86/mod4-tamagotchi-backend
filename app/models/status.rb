@@ -20,6 +20,8 @@ class Status < ApplicationRecord
         self.all.each do |tama|
             if tama.money > 0
                 tama.money -= 5
+                if tama.money < 0
+                    tama.money = 0
             end
             tama.save
         end
