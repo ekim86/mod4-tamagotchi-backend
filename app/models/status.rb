@@ -15,4 +15,13 @@ class Status < ApplicationRecord
             tama.save
         end
     end
+
+    def self.decrease_money
+        self.all.each do |tama|
+            if tama.money > 0
+                tama.money -= 5
+            end
+            tama.save
+        end
+    end
 end

@@ -22,6 +22,10 @@ every 1.minutes do
     runner "Status.decrease_all"
 end
 
+every 1.minutes do
+    runner "Status.decrease_money"
+end
+
 # Learn more: http://github.com/javan/whenever
 # update whenever "whenever --update-crontab"
 # stop whenever "crontab -r"
