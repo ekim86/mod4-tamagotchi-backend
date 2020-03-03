@@ -18,7 +18,7 @@ user3 = User.create(username: 'ekim86', password: '123')
 user4 = User.create(username: 'hurricanejay', password: '123')
 user5 = User.create(username: 'Candillan', password: '123')
 
-tamagotchi1 = Tamagotchi.create(name: 'Mametchi', species: 'species1', happiness: 2, fullness:1, income: 3, image: 'https://66.media.tumblr.com/7e4951d895d1b4db1f2d2ea6ba89b686/tumblr_oui6v5rcM51ws4s25o1_500.gif')
+tamagotchi1 = Tamagotchi.create(name: 'Mametchi', species: 'species1', happiness: 2, fullness:1, income: 3, image: 'https://media.giphy.com/media/Nhlkq5FnUxjGM/giphy.gif')
 tamagotchi2 = Tamagotchi.create(name: 'Kuchipatchi', species: 'species1', happiness: 2, fullness:1, income: 3, image: 'https://i.pinimg.com/originals/89/15/7b/89157b4b2d6675238f22ed519678c59e.png')
 tamagotchi3 = Tamagotchi.create(name: 'Violetchi', species: 'species1', happiness: 2, fullness:1, income: 3, image: 'https://www.pinclipart.com/picdir/big/176-1764473_trumpet-tamagotchi-friends-mametchi-clipart.png')
 tamagotchi4 = Tamagotchi.create(name: 'Lovelitchi', species: 'species1', happiness: 2, fullness:1, income: 3, image: 'https://www.stickpng.com/assets/images/5a2d8324b3c4622cbe359731.png')
