@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   get 'statuses/user/:id', to: 'statuses#user_statuses'
 
   get 'items/', to: 'items#index'
-  get 'items/:id', to: 'items#show'
 
   get 'inventories/:status_id', to: 'inventories#index'
   post 'inventories/buy', to: 'inventories#buy'
@@ -16,7 +15,6 @@ Rails.application.routes.draw do
   post 'inventories/play', to: 'inventories#play'
 
   post 'users/create', to: 'users#create'
-  post 'users/login', to: 'users#login'
 
   post "/login", to: "auth#login"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

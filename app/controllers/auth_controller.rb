@@ -10,13 +10,4 @@ class AuthController < ApplicationController
       end
     end
   
-    def auto_login
-        byebug
-      if session_user
-        render json: session_user
-      else 
-        render json: {errors: "That ain't no user I ever heard of!"}
-      end
-      
-    end
   end
