@@ -38,7 +38,7 @@ item6 = Item.create(name: 'fried egg', effect: 2, category: 'food', price: 1, im
 
 item7 = Item.create(name: 'beach ball', effect: 2, category: 'toy', price: 3, image: 'https://webstockreview.net/images/beachball-clipart-5.png')
 item8 = Item.create(name: 'lego', effect: 2, category: 'toy', price: 5, image: 'https://pngimg.com/uploads/lego/lego_PNG47.png')
-item9 = Item.create(name: 'dollhouse', effect: 2, category: 'toy', price: 7, image: 'https://i.dlpng.com/static/png/5461275_thumb.png')
+item9 = Item.create(name: 'dollhouse', effect: 2, category: 'toy', price: 7, image: 'https://3.bp.blogspot.com/-IP17PZjZoY8/TgVMknOkEhI/AAAAAAAABW0/KzoT9Oa9yRU/s1600/photo-361.gif')
 item10 = Item.create(name: 'racecar', effect: 2, category: 'toy', price: 3, image: 'https://cdn.clipart.email/2dcc77d57ba189319fbfadd939083210_racing-car-clipart-png-image-free-download-searchpngcom_715-715.png')
 item11 = Item.create(name: 'barbie', effect: 2, category: 'toy', price: 5, image: 'https://pngimg.com/uploads/barbie/barbie_PNG56.png')
 item12 = Item.create(name: 'strawberries', effect: 2, category: 'food', price: 5, image: 'https://i.ya-webdesign.com/images/fruits-transparent-kawaii-5.png')
