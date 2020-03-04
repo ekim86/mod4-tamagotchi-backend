@@ -22,6 +22,7 @@ class Status < ApplicationRecord
                 tama.money -= 5
                 if tama.money < 0
                     tama.money = 0
+                end
             end
             tama.save
         end
