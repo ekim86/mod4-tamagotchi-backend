@@ -41,6 +41,14 @@ item10 = Item.create(name: 'racecar', effect: 2, category: 'toy', price: 3, imag
 item11 = Item.create(name: 'barbie', effect: 2, category: 'toy', price: 5, image: '/barbie.png')
 item12 = Item.create(name: 'strawberries', effect: 2, category: 'food', price: 5, image: '/strawberries.png')
 
+item13 = Item.create(name: 'musubi', effect: 2, category: 'food', price: 5, image: '/musubi.png')
+item14 = Item.create(name: 'waffles', effect: 2, category: 'food', price: 3, image: '/waffles.png')
+item15 = Item.create(name: 'fries', effect: 2, category: 'food', price: 2, image: '/fries.png')
+item16 = Item.create(name: 'taco', effect: 2, category: 'food', price: 1, image: '/taco.png')
+item17 = Item.create(name: 'rollcake', effect: 2, category: 'food', price: 3, image: '/rollcake.gif')
+item18 = Item.create(name: 'mooncake', effect: 2, category: 'food', price: 3, image: '/mooncake.txt')
+item18 = Item.create(name: 'tamagotchi', effect: 2, category: 'food', price: 5, image: '/tamagotchi.gif')
+
 
 status1 = Status.create(user: user1, tamagotchi: tamagotchi1, happiness: 10, fullness: 10, money: 100, nickname:'GiGgLeZ')
 status2 = Status.create(user: user1, tamagotchi: tamagotchi2, happiness: 10, fullness: 10, money: 100, nickname:'bOo bOoo')
