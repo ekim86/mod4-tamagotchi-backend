@@ -26,8 +26,8 @@ module TamagotchiBackend
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-          origins '*'
-          resource '*', headers: :any, methods: [:get, :post, :patch, :delete]
+          origins 'https://mod4-tamagotchi-backend.herokuapp.com'
+          resource 'https://mod4-tamagotchi-backend.herokuapp.com', headers: :any, methods: [:get, :post, :patch, :delete]
       end
     end
 
